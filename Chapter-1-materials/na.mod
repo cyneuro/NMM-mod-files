@@ -3,7 +3,7 @@
 NEURON {
 	SUFFIX na
 	USEION na READ ena WRITE ina
-	RANGE gnabar, gna, inaplot
+	RANGE gbar, gna, inaplot
 	RANGE minf, hinf, mtau, htau
 }
 
@@ -13,7 +13,7 @@ UNITS {
 }
 
 PARAMETER {
-	gnabar = 0.300 (siemens/cm2) <0,1e9>
+	gbar = 0.300 (siemens/cm2) <0,1e9>
 }
 
 ASSIGNED {
@@ -34,7 +34,7 @@ STATE {
 
 BREAKPOINT {
 	SOLVE states METHOD cnexp
-	gna = gnabar*m*m*m*h
+	gna = gbar*m*m*m*h
 	ina = gna*(v-ena)
 	inaplot = ina
 }

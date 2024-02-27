@@ -3,7 +3,7 @@
 NEURON {
 	SUFFIX leak
 	NONSPECIFIC_CURRENT il
-	RANGE il, el, glbar
+	RANGE il, el, gbar
 }
 
 UNITS {
@@ -12,7 +12,7 @@ UNITS {
 }
 
 PARAMETER {
-	glbar = 3.333333e-5 (siemens/cm2) < 0, 1e9 >
+	gbar = 3.333333e-5 (siemens/cm2) < 0, 1e9 >
 	el = -75 (mV)
 }
 
@@ -22,5 +22,5 @@ ASSIGNED {
 }
 
 BREAKPOINT { 
-	il = glbar*(v - el)
+	il = gbar*(v - el)
 }
