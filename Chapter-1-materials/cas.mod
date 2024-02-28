@@ -32,7 +32,7 @@ STATE {
 
 BREAKPOINT {
 	SOLVE states METHOD cnexp
-	gcas = gbarr*u*u*u
+	gcas = gbar*u*u*u
 	ica = gcas*(v-eca)
 	icas = ica
 }
