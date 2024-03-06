@@ -384,23 +384,6 @@ FUNCTION nernst(ci(mM), co(mM), z) (mV) {
     if(verbose > 1) { UNITSOFF printf("nernst:%g R:%g temperature (c):%g \n", nernst, R, celsius) UNITSON }
 }
 
-FUNCTION urand()() {
-    VERBATIM
-    _lurand = (((double)random()) / ((double)MAXLONG));
-    ENDVERBATIM
-}
-
-FUNCTION brand(n, p) {
-    LOCAL result, count, success
-    success = 0
-    FROM count = 0 TO (n - 1) {
-        result = urand()
-        if(result <= p) {
-            success = success + 1
-        }
-    }
-    brand = success
-}
 
 : functions added by Greg Glickert
 FUNCTION eta(Cani (us/liter)) {
