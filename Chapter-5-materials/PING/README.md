@@ -1,0 +1,1 @@
+# This notebook is a PING network designed to show how Tau values of synapses can effect the behavior of a network

@@ -1,0 +1,5 @@
+edge_type_id target_query source_query target_sections model_template dynamics_params syn_weight distance_range delay
+100 pop_name=='Exc' pop_name=='Exc' ['soma'] exp2syn Exc2Exc.json 0.0 "[0.0, 999.9]" 0
+101 pop_name=='Inh' pop_name=='Exc' ['soma'] exp2syn Exc2Inh.json 0.00625 "[0.0, 999.9]" 0
+102 pop_name=='Exc' pop_name=='Inh' ['soma'] exp2syn Inh2Exc.json 0.025 "[0.0, 999.9]" 0
+103 pop_name=='Inh' pop_name=='Inh' ['soma'] exp2syn Inh2Inh.json 0.008 "[0.0, 999.9]" 0
