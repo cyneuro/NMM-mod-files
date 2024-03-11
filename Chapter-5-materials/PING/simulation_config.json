@@ -16,17 +16,28 @@
     "celsius": 34.0,
     "v_init": -75.0
   },
-  "node_sets": {
-    "exc": {
-      "pop_name":"bgnoisevirtExc"
-    }
-  },
   "inputs": {
     "noise": {
       "input_type": "spikes",
       "module": "sonata",
       "input_file": "input/ext_inp_poisson.h5",
       "node_set": "exc"
+    },
+    "current_clamp": {
+      "input_type": "current_clamp",
+      "module": "IClamp",
+      "node_set": "pn",
+      "amp": 0.6,
+      "delay": 0,
+      "duration": 3000.0
+    },
+    "current_clamp2": {
+      "input_type": "current_clamp",
+      "module": "IClamp",
+      "node_set": "pv",
+      "amp": 0.2,
+      "delay": 0,
+      "duration": 3000.0
     }
   },
   "output": {

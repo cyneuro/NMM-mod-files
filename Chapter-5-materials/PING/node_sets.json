@@ -4,5 +4,14 @@
   },
   "point_nodes": {
     "model_type": "point_process"
+  },
+  "exc": {
+    "pop_name":"bgnoisevirtExc"
+  },
+  "pn": {
+    "pop_name":"Exc"
+  },
+  "pv": {
+    "pop_name":"Inh"
   }
 }
