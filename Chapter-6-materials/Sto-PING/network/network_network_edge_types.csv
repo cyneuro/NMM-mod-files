@@ -1,5 +1,5 @@
-edge_type_id target_query source_query delay dynamics_params model_template syn_weight distance_range target_sections
-100 pop_name=='Exc' pop_name=='Exc' 0 Exc2Exc.json exp2syn_weight 0.0 "[0.0, 999.9]" ['soma']
-101 pop_name=='Inh' pop_name=='Exc' 0 Exc2Inh.json exp2syn_weight 0.00625 "[0.0, 999.9]" ['soma']
-102 pop_name=='Exc' pop_name=='Inh' 0 Inh2Exc.json exp2syn_weight 0.025 "[0.0, 999.9]" ['soma']
-103 pop_name=='Inh' pop_name=='Inh' 0 Inh2Inh.json exp2syn_weight 0.008 "[0.0, 999.9]" ['soma']
+edge_type_id target_query source_query model_template syn_weight target_sections distance_range dynamics_params delay
+100 pop_name=='Exc' pop_name=='Exc' exp2syn_weight 0.005 ['soma'] "[0.0, 999.9]" Exc2Exc.json 0
+101 pop_name=='Inh' pop_name=='Exc' exp2syn_weight 0.005 ['soma'] "[0.0, 999.9]" Exc2Inh.json 0
+102 pop_name=='Exc' pop_name=='Inh' exp2syn_weight 0.02 ['soma'] "[0.0, 999.9]" Inh2Exc.json 0
+103 pop_name=='Inh' pop_name=='Inh' exp2syn_weight 0.02 ['soma'] "[0.0, 999.9]" Inh2Inh.json 0
